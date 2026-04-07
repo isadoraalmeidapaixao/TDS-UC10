@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\isadora.apaixao\\Documents\\TDS-UC10\\01\\ControleEstoque\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{24B371C9-BC4B-49B5-84C2-9A3A5D8E4217}|ControleEstoque.API\\ControleEstoque.API.csproj|c:\\users\\isadora.apaixao\\documents\\tds-uc10\\01\\controleestoque\\controleestoque.api\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24B371C9-BC4B-49B5-84C2-9A3A5D8E4217}|ControleEstoque.API\\ControleEstoque.API.csproj|solutionrelative:controleestoque.api\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\isadora.apaixao\\Documents\\TDS-UC10\\01\\ControleEstoque\\ControleEstoque.API\\Migrations\\20260407010730_inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ControleEstoque.API\\Migrations\\20260407010730_inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\isadora.apaixao\\Documents\\TDS-UC10\\01\\ControleEstoque\\ControleEstoque.API\\Models\\Usuario.cs",
-              "RelativeDocumentMoniker": "ControleEstoque.API\\Models\\Usuario.cs",
-              "ToolTip": "C:\\Users\\isadora.apaixao\\Documents\\TDS-UC10\\01\\ControleEstoque\\ControleEstoque.API\\Models\\Usuario.cs",
-              "RelativeToolTip": "ControleEstoque.API\\Models\\Usuario.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAjAAAAAAAAAA==",
+              "Title": "20260407010730_inicial.cs",
+              "DocumentMoniker": "C:\\Users\\isadora.apaixao\\Documents\\TDS-UC10\\01\\ControleEstoque\\ControleEstoque.API\\Migrations\\20260407010730_inicial.cs",
+              "RelativeDocumentMoniker": "ControleEstoque.API\\Migrations\\20260407010730_inicial.cs",
+              "ToolTip": "C:\\Users\\isadora.apaixao\\Documents\\TDS-UC10\\01\\ControleEstoque\\ControleEstoque.API\\Migrations\\20260407010730_inicial.cs",
+              "RelativeToolTip": "ControleEstoque.API\\Migrations\\20260407010730_inicial.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-03T00:48:58.109Z",
+              "WhenOpened": "2026-04-07T01:07:30.391Z",
               "EditorCaption": ""
             }
           ]
