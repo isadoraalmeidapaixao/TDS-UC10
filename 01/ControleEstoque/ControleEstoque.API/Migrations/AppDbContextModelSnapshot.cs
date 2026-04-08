@@ -57,7 +57,7 @@ namespace ControleEstoque.API.Migrations
                         .HasColumnType("int");
 
                     b.Property<decimal>("PrecoUnitario")
-                        .HasColumnType("decimal(10, 2)");
+                        .HasColumnType("decimal(10,2)");
 
                     b.Property<int?>("ProdutoId")
                         .HasColumnType("int");
@@ -71,7 +71,7 @@ namespace ControleEstoque.API.Migrations
 
                     b.HasIndex("ProdutoId");
 
-                    b.ToTable("ItensPedidos");
+                    b.ToTable("ItensPedido");
                 });
 
             modelBuilder.Entity("ControleEstoque.API.Models.Pedido", b =>
@@ -124,7 +124,7 @@ namespace ControleEstoque.API.Migrations
                     b.Property<decimal>("Preco")
                         .HasColumnType("decimal(10,2)");
 
-                    b.Property<int>("QuantidadeEstoque")
+                    b.Property<int>("QauntidadeEstoque")
                         .HasColumnType("int");
 
                     b.HasKey("Id");

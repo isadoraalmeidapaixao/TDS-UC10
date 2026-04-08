@@ -15,11 +15,12 @@ namespace ControleEstoque.API.Models
         public decimal Preco { get; set; }
 
         [Required]
-        public int QuantidadeEstoque { get; set; }
+        public int QauntidadeEstoque { get; set; }
 
         [ForeignKey("Fornecedor")]
         public int FornecedorId { get; set; }
         public Fornecedor Fornecedor { get; set; }
+
         public ICollection<ItemPedido> ItensPedido { get; set; } = new List<ItemPedido>();
     }
 }

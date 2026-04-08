@@ -7,10 +7,11 @@ namespace ControleEstoque.API.Models
     {
         [Key]
         public int Id { get; set; }
+
         [Required]
         public int Quantidade { get; set; }
 
-        [Required, Column(TypeName = "decimal(10, 2)")]
+        [Required, Column(TypeName = "decimal(10,2)")]
         public decimal PrecoUnitario { get; set; }
     }
 }

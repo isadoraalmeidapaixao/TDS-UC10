@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace ControleEstoque.API.Migrations
 {
     /// <inheritdoc />
-    public partial class inicial : Migration
+    public partial class Inicial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -53,7 +53,7 @@ namespace ControleEstoque.API.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Nome = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
                     Preco = table.Column<decimal>(type: "decimal(10,2)", nullable: false),
-                    QuantidadeEstoque = table.Column<int>(type: "int", nullable: false),
+                    QauntidadeEstoque = table.Column<int>(type: "int", nullable: false),
                     FornecedorId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -94,7 +94,7 @@ namespace ControleEstoque.API.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "ItensPedidos",
+                name: "ItensPedido",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -106,27 +106,27 @@ namespace ControleEstoque.API.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_ItensPedidos", x => x.Id);
+                    table.PrimaryKey("PK_ItensPedido", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_ItensPedidos_Pedidos_PedidoId",
+                        name: "FK_ItensPedido_Pedidos_PedidoId",
                         column: x => x.PedidoId,
                         principalTable: "Pedidos",
                         principalColumn: "Id");
                     table.ForeignKey(
-                        name: "FK_ItensPedidos_Produtos_ProdutoId",
+                        name: "FK_ItensPedido_Produtos_ProdutoId",
                         column: x => x.ProdutoId,
                         principalTable: "Produtos",
                         principalColumn: "Id");
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_ItensPedidos_PedidoId",
-                table: "ItensPedidos",
+                name: "IX_ItensPedido_PedidoId",
+                table: "ItensPedido",
                 column: "PedidoId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_ItensPedidos_ProdutoId",
-                table: "ItensPedidos",
+                name: "IX_ItensPedido_ProdutoId",
+                table: "ItensPedido",
                 column: "ProdutoId");
 
             migrationBuilder.CreateIndex(
@@ -149,7 +149,7 @@ namespace ControleEstoque.API.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "ItensPedidos");
+                name: "ItensPedido");
 
             migrationBuilder.DropTable(
                 name: "Pedidos");
