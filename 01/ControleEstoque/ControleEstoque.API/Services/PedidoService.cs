@@ -34,8 +34,10 @@ namespace ControleEstoque.API.Services
 
         public Task<Pedido?> ObterPedidoComDetalhesAsync(int pedidoId)
         {
-            // está retornando apenas o pedido puro, sem os 'detalhes' necessários
-            return _context.Pedidos.FirstOrDefaultAsync(p => p.Id == pedidoId);
+            return _context.Pedidos
+                .Include(p => p.Itens)
+                .ThenInclude(i => i.Produto)
+                .FirstOrDefaultAsync(p => p.Id == pedidoId);
         }
     }
 }

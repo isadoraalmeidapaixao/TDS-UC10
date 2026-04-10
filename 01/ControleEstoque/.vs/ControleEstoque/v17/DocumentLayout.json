@@ -3,24 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\isadora.apaixao\\Documents\\TDS-UC10\\01\\ControleEstoque\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6641EA26-0657-4EF5-B145-F6F5B0553EFC}|ControleEstoque.API\\ControleEstoque.API.csproj|c:\\users\\isadora.apaixao\\documents\\tds-uc10\\01\\controleestoque\\controleestoque.api\\models\\itempedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6641EA26-0657-4EF5-B145-F6F5B0553EFC}|ControleEstoque.API\\ControleEstoque.API.csproj|solutionrelative:controleestoque.api\\models\\itempedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6641EA26-0657-4EF5-B145-F6F5B0553EFC}|ControleEstoque.API\\ControleEstoque.API.csproj|c:\\users\\isadora.apaixao\\documents\\tds-uc10\\01\\controleestoque\\controleestoque.api\\services\\pedidoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6641EA26-0657-4EF5-B145-F6F5B0553EFC}|ControleEstoque.API\\ControleEstoque.API.csproj|solutionrelative:controleestoque.api\\services\\pedidoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6641EA26-0657-4EF5-B145-F6F5B0553EFC}|ControleEstoque.API\\ControleEstoque.API.csproj|c:\\users\\isadora.apaixao\\documents\\tds-uc10\\01\\controleestoque\\controleestoque.api\\dtos\\detalhespedidodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6641EA26-0657-4EF5-B145-F6F5B0553EFC}|ControleEstoque.API\\ControleEstoque.API.csproj|solutionrelative:controleestoque.api\\dtos\\detalhespedidodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6641EA26-0657-4EF5-B145-F6F5B0553EFC}|ControleEstoque.API\\ControleEstoque.API.csproj|c:\\users\\isadora.apaixao\\documents\\tds-uc10\\01\\controleestoque\\controleestoque.api\\controllers\\pedidoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6641EA26-0657-4EF5-B145-F6F5B0553EFC}|ControleEstoque.API\\ControleEstoque.API.csproj|solutionrelative:controleestoque.api\\controllers\\pedidoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6641EA26-0657-4EF5-B145-F6F5B0553EFC}|ControleEstoque.API\\ControleEstoque.API.csproj|c:\\users\\isadora.apaixao\\documents\\tds-uc10\\01\\controleestoque\\controleestoque.api\\dtos\\criarpedidodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6641EA26-0657-4EF5-B145-F6F5B0553EFC}|ControleEstoque.API\\ControleEstoque.API.csproj|solutionrelative:controleestoque.api\\dtos\\criarpedidodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6641EA26-0657-4EF5-B145-F6F5B0553EFC}|ControleEstoque.API\\ControleEstoque.API.csproj|c:\\users\\isadora.apaixao\\documents\\tds-uc10\\01\\controleestoque\\controleestoque.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6641EA26-0657-4EF5-B145-F6F5B0553EFC}|ControleEstoque.API\\ControleEstoque.API.csproj|solutionrelative:controleestoque.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6641EA26-0657-4EF5-B145-F6F5B0553EFC}|ControleEstoque.API\\ControleEstoque.API.csproj|c:\\users\\isadora.apaixao\\documents\\tds-uc10\\01\\controleestoque\\controleestoque.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{6641EA26-0657-4EF5-B145-F6F5B0553EFC}|ControleEstoque.API\\ControleEstoque.API.csproj|solutionrelative:controleestoque.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,70 +22,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 169,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ItemPedido.cs",
-              "DocumentMoniker": "C:\\Users\\isadora.apaixao\\Documents\\TDS-UC10\\01\\ControleEstoque\\ControleEstoque.API\\Models\\ItemPedido.cs",
-              "RelativeDocumentMoniker": "ControleEstoque.API\\Models\\ItemPedido.cs",
-              "ToolTip": "C:\\Users\\isadora.apaixao\\Documents\\TDS-UC10\\01\\ControleEstoque\\ControleEstoque.API\\Models\\ItemPedido.cs",
-              "RelativeToolTip": "ControleEstoque.API\\Models\\ItemPedido.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-09T01:00:51.852Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "PedidosController.cs",
               "DocumentMoniker": "C:\\Users\\isadora.apaixao\\Documents\\TDS-UC10\\01\\ControleEstoque\\ControleEstoque.API\\Controllers\\PedidosController.cs",
               "RelativeDocumentMoniker": "ControleEstoque.API\\Controllers\\PedidosController.cs",
               "ToolTip": "C:\\Users\\isadora.apaixao\\Documents\\TDS-UC10\\01\\ControleEstoque\\ControleEstoque.API\\Controllers\\PedidosController.cs",
               "RelativeToolTip": "ControleEstoque.API\\Controllers\\PedidosController.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAADUAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAACYAAAAAAAAAAAApwD0AAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-09T00:03:14.836Z",
+              "WhenOpened": "2026-04-10T00:06:49.546Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CriarPedidoDto.cs",
-              "DocumentMoniker": "C:\\Users\\isadora.apaixao\\Documents\\TDS-UC10\\01\\ControleEstoque\\ControleEstoque.API\\DTOs\\CriarPedidoDto.cs",
-              "RelativeDocumentMoniker": "ControleEstoque.API\\DTOs\\CriarPedidoDto.cs",
-              "ToolTip": "C:\\Users\\isadora.apaixao\\Documents\\TDS-UC10\\01\\ControleEstoque\\ControleEstoque.API\\DTOs\\CriarPedidoDto.cs",
-              "RelativeToolTip": "ControleEstoque.API\\DTOs\\CriarPedidoDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAqAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "DetalhesPedidoDto.cs",
+              "DocumentMoniker": "C:\\Users\\isadora.apaixao\\Documents\\TDS-UC10\\01\\ControleEstoque\\ControleEstoque.API\\DTOs\\DetalhesPedidoDto.cs",
+              "RelativeDocumentMoniker": "ControleEstoque.API\\DTOs\\DetalhesPedidoDto.cs",
+              "ToolTip": "C:\\Users\\isadora.apaixao\\Documents\\TDS-UC10\\01\\ControleEstoque\\ControleEstoque.API\\DTOs\\DetalhesPedidoDto.cs",
+              "RelativeToolTip": "ControleEstoque.API\\DTOs\\DetalhesPedidoDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-09T00:19:39.997Z",
+              "WhenOpened": "2026-04-09T23:22:41.358Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\isadora.apaixao\\Documents\\TDS-UC10\\01\\ControleEstoque\\ControleEstoque.API\\Program.cs",
-              "RelativeDocumentMoniker": "ControleEstoque.API\\Program.cs",
-              "ToolTip": "C:\\Users\\isadora.apaixao\\Documents\\TDS-UC10\\01\\ControleEstoque\\ControleEstoque.API\\Program.cs",
-              "RelativeToolTip": "ControleEstoque.API\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAApAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "PedidoService.cs",
+              "DocumentMoniker": "C:\\Users\\isadora.apaixao\\Documents\\TDS-UC10\\01\\ControleEstoque\\ControleEstoque.API\\Services\\PedidoService.cs",
+              "RelativeDocumentMoniker": "ControleEstoque.API\\Services\\PedidoService.cs",
+              "ToolTip": "C:\\Users\\isadora.apaixao\\Documents\\TDS-UC10\\01\\ControleEstoque\\ControleEstoque.API\\Services\\PedidoService.cs",
+              "RelativeToolTip": "ControleEstoque.API\\Services\\PedidoService.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowCEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-08T00:41:50.382Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\isadora.apaixao\\Documents\\TDS-UC10\\01\\ControleEstoque\\ControleEstoque.API\\appsettings.json",
-              "RelativeDocumentMoniker": "ControleEstoque.API\\appsettings.json",
-              "ToolTip": "C:\\Users\\isadora.apaixao\\Documents\\TDS-UC10\\01\\ControleEstoque\\ControleEstoque.API\\appsettings.json",
-              "RelativeToolTip": "ControleEstoque.API\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-04-07T23:01:02.444Z"
+              "WhenOpened": "2026-04-09T23:20:20.085Z",
+              "EditorCaption": ""
             }
           ]
         }

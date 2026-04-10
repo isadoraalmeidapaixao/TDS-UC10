@@ -10,7 +10,6 @@
     {
         public int ProdutoId { get; set; }
         public int Quantidade { get; set; }
-        public decimal Preco { get; set; }
 
         //não pedimos o preço, back end busca no banco
     }
