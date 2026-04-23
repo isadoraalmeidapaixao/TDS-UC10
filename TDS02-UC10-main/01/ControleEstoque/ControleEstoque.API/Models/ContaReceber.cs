@@ -21,5 +21,8 @@ namespace ControleEstoque.API.Models
 
         [Required, StringLength(20)]
         public string Status { get; set; }
+        [Required]
+        public int ClienteId { get; set; }
+        public Cliente Cliente { get; set; }
     }
 }

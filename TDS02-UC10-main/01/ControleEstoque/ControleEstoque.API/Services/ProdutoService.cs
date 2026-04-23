@@ -15,13 +15,46 @@ namespace ControleEstoque.API.Services
             _context = context;
         }
 
-        public Task AtualizarProdutoDtoAsync(AtualizarProdutoDto dto)
+        public async Task AtualizarProdutoDtoAsync(AtualizarProdutoDto dto)
         {
-            throw new NotImplementedException();
+            //buscar essa entidade no banco
+
+            var produto = await _context.Produtos
+                .FirstOrDefaultAsync(p => p.Id == dto.Id);
+            
+            if(produto != null) //se ela existir
+            {
+                //verifico se o fornecedor existe
+                var fornecedor = await _context.Fornecedores.FirstOrDefaultAsync
+                    (f => f.Id == dto.FornecedorId);
+
+                if(fornecedor == null)
+                
+                    throw new ArgumentException("O fornecedor informado não existe");
+                
+                // atualizo os dados do produto
+                produto.Nome = dto.Nome;
+                produto.Preco = dto.Preco;
+                produto.QauntidadeEstoque = dto.QauntidadeEstoque;
+                produto.FornecedorId = dto.FornecedorId;
+            
+                // salvo e retorno
+                _context.Produtos.Update(produto);
+                await _context.SaveChangesAsync();
+            }
         }
 
         public async Task<ProdutoDto> CriarProdutoAsync(CriarProdutoDto dto)
         {
+            // 1 - verifico a existencia do fornecedor
+            var fornecedorExistente = await _context.Fornecedores.FirstOrDefaultAsync(f => f.Id == dto.FornecedorId);
+            
+            // 2 - se nao existir, interrompo o fluxo de forma amigavel
+            if(fornecedorExistente == null)
+            {
+                throw new ArgumentException("O fornecedor informado não existe");
+            }
+
             var produto = new Produto()
             {
                 Nome = dto.Nome,
