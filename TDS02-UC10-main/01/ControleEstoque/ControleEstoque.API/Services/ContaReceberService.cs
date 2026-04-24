@@ -27,6 +27,7 @@ namespace ControleEstoque.API.Services
                 conta.DataPagamento = dto.DataPagamento;
                 conta.Status = dto.Status;
 
+
                 _context.ContasReceber.Update(conta);
                 await _context.SaveChangesAsync();
             }
@@ -40,18 +41,35 @@ namespace ControleEstoque.API.Services
                 DataVencimento = dto.DataVencimento,
                 Descricao = dto.Descricao,
                 Status = dto.Status,
-                Valor = dto.Valor
+                Valor = dto.Valor,
+                ClienteId = dto.ClienteId
             };
 
             await _context.ContasReceber.AddAsync(conta);
             await _context.SaveChangesAsync();
 
-            return await ObterPorIdAsync(conta.Id);
+            //buscar com cliente
+            var contaCriada = await _context.ContasReceber
+                .Include(c => c.Cliente)
+                .FirstAsync(c => c.Id == conta.Id);
+
+            return new ContaReceberDto
+            {
+                Id = contaCriada.Id,
+                DataPagamento = contaCriada.DataPagamento,
+                DataVencimento = contaCriada.DataVencimento,
+                Descricao = contaCriada.Descricao,
+                Status = contaCriada.Status,
+                Valor = contaCriada.Valor,
+                ClienteId = contaCriada.ClienteId
+            };
+
         }
 
         public async Task<ContaReceberDto?> ObterPorIdAsync(int id)
         {
             var conta = await _context.ContasReceber
+                .Include(cr => cr.Cliente)
                 .FirstOrDefaultAsync(cr => cr.Id == id);
 
             if (conta == null) return null;
@@ -63,13 +81,15 @@ namespace ControleEstoque.API.Services
                 DataVencimento = conta.DataVencimento,
                 Descricao = conta.Descricao,
                 Status = conta.Status,
-                Valor = conta.Valor
+                Valor = conta.Valor,
+                ClienteId = conta.ClienteId
             };
         }
 
         public async Task<IEnumerable<ContaReceberDto>> ObterTodosAsync()
         {
             return await _context.ContasReceber
+                .Include(cr => cr.Cliente)
                 .Select(cr => new ContaReceberDto 
                 {
                     Id = cr.Id,
@@ -77,7 +97,8 @@ namespace ControleEstoque.API.Services
                     DataVencimento = cr.DataVencimento,
                     Descricao = cr.Descricao,
                     Status = cr.Status,
-                    Valor = cr.Valor                    
+                    Valor = cr.Valor,
+                    ClienteId = cr.ClienteId
                 })
                 .ToListAsync();
         }

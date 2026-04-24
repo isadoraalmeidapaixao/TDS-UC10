@@ -8,6 +8,7 @@
         public DateOnly DataVencimento { get; set; }
         public DateOnly? DataPagamento { get; set; }
         public string Status { get; set; }
+        public int ClienteId { get; set; }
     }
 
     public class CriarContaReceberDto
@@ -17,6 +18,7 @@
         public DateOnly DataVencimento { get; set; }
         public DateOnly? DataPagamento { get; set; }
         public string Status { get; set; }
+        public int ClienteId { get; set; }
     }
 
     public class AtualizarContaReceberDto

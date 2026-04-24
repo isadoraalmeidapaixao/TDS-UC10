@@ -27,8 +27,7 @@ namespace ControleEstoque.API.Controllers
         public async Task<IActionResult> Create([FromBody] CriarContaReceberDto dto)
         {
             var novaConta = await _contaReceberService.CriarAsync(dto);
-            return Ok(novaConta);
-            // return Created(nameof(Create), novaConta);
+            return Created(nameof(Create), novaConta);
         }
 
 
