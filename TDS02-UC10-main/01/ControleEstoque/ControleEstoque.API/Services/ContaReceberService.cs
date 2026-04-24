@@ -27,7 +27,6 @@ namespace ControleEstoque.API.Services
                 conta.DataPagamento = dto.DataPagamento;
                 conta.Status = dto.Status;
 
-
                 _context.ContasReceber.Update(conta);
                 await _context.SaveChangesAsync();
             }
