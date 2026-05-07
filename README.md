@@ -1,1 +1,1 @@
-Unidade Curricular 10.
+Unidade Curricular 10
